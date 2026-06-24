@@ -1,0 +1,39 @@
+\usepackage{cite}
+
+\documentclass[sigconf]{acmart}
+\usepackage{multirow}
+\settopmatter{printacmref=false}
+\setcopyright{none}
+\pagestyle{plain}
+\begin{document}
+
+\begin{table*}[t]
+\centering
+\setcounter{table}{12}
+\caption{Práticas ágeis que influenciam na qualidade do software organizadas por categoria}
+\label{tab:praticas_ageis_ape}
+\begin{tabular}{p{4cm} c p{5cm} p{3cm} c}
+\toprule
+\textbf{Categoria} & \textbf{No.} & \textbf{Prática} & \textbf{Fonte} & \textbf{Frequência} \\
+\toprule
+\multirow{1}{*}{Práticas de Documentação}
+ & 1  & Sprint Backlog                                                  & \cite{Sivaram:2026} & 1 \\
+ & 2  & Product Backlog                                                 & \cite{Sivaram:2026} & 1 \\
+\multirow{1}{*}{Práticas de Gerenciamento}
+ & 3  & Planejamento de Sprint                                          & \cite{Sivaram:2026} & 1 \\
+ & 4  & Tomada de Decisão Conjunta                                      & \cite{Krancher:2020} & 1 \\
+ & 5  & Análise Contínua                                                & \cite{Krancher:2020} & 1 \\
+ & 6  & Reuniões Diárias                                                & \cite{Azhar:2023, Sivaram:2026} & 2 \\
+ & 7  & Pequenas Entregas                                               & \cite{Azhar:2023} & 1 \\
+ & 8  & Reuniões de Retrospectiva                                       & \cite{Sivaram:2026} & 1 \\
+ & 9  & Definição Clara de Papéis                                       & \cite{Sivaram:2026} & 1 \\
+\multirow{1}{*}{Práticas de Teste}
+ & 10 & Integração Contínua                                             & \cite{Krancher:2020} & 1 \\
+ & 11 & Desenvolvimento Dirigido por Testes (TDD)                       & \cite{Azhar:2023} & 1 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{tables/references}
+\end{document}

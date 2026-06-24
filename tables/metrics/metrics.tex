@@ -1,0 +1,71 @@
+\usepackage{cite}
+
+\documentclass[sigconf]{acmart}
+\usepackage{multirow}
+\settopmatter{printacmref=false}
+\setcopyright{none}
+\pagestyle{plain}
+\begin{document}
+
+\begin{table*}[t]
+\centering
+\setcounter{table}{11}
+\caption{Métricas para a avaliação da qualidade organizadas por categoria}
+\label{tab:metricas_ape}
+\begin{tabular}{p{3.6cm} c p{8cm} c c}
+\toprule
+\textbf{Categoria} & \textbf{No.} & \textbf{Métrica} & \textbf{Fonte} & \textbf{Frequência} \\
+\midrule
+\multirow{21}{2.6cm}{\parbox{3.2cm}{Métricas de\\Qualidade}}
+ & 1  & Porcentagem de Satisfação do Cliente                              & \cite{Khalid:2019}   & 1 \\
+ & 2  & Total de Linhas de Código (LOC)                                   & \cite{Khalid:2019}   & 1 \\
+ & 3  & Defeitos Pós-Lançamento                                           & \cite{Khalid:2019}   & 1 \\
+ & 4  & Relação Desempenho/Qualidade (Defeitos / KLOC)                    & \cite{Khalid:2019}   & 1 \\
+ & 5  & Taxa de Redução de Defeitos                                       & \cite{Rahman:2020}   & 1 \\
+ & 6  & Fórmula de Garantia de Qualidade                                  & \cite{Rahman:2020}   & 1 \\
+ & 7  & Razão de Correção de Erros (E)                                    & \cite{Misra:2021}    & 1 \\
+ & 8  & Métricas ISO/IEC 25022                                            & \cite{Guerrero:2022} & 1 \\
+ & 9  & Métricas ISO/IEC 25010                                            & \cite{Sivaram:2026}  & 1 \\
+ & 10 & Métricas ISO/IEC 25023                                            & \cite{Guerrero:2022} & 1 \\
+ & 11 & Densidade de Defeitos (DD)                                        & \cite{Azhar:2023}    & 1 \\
+ & 12 & Densidade de Defeitos Ponderada (WDD)                             & \cite{Azhar:2023}    & 1 \\
+ & 13 & Desempenho na Correção de Bugs                                    & \cite{Karhapaa:2024} & 1 \\
+ & 14 & Volume de Correções de Bugs                                       & \cite{Karhapaa:2024} & 1 \\
+ & 15 & Quantidade de Arquivos Complexos no Código                        & \cite{Karhapaa:2024} & 1 \\
+ & 16 & Proporção de Problemas Críticos                                   & \cite{Karhapaa:2024} & 1 \\
+ & 17 & Quantidade de Arquivos Sem Bloqueios                              & \cite{Karhapaa:2024} & 1 \\
+ & 18 & Proporção de Arquivos Comentados                                  & \cite{Karhapaa:2024} & 1 \\
+ & 19 & Proporção de Issues em Aberto                                     & \cite{Karhapaa:2024} & 1 \\
+ & 20 & Fator de Qualidade de Desempenho de Teste                         & \cite{Guerrero:2022} & 1 \\
+ & 21 & Acurácia                                                          & \cite{Ilays:2024}    & 1 \\
+
+\multirow{14}{2.6cm}{\parbox{3.2cm}{Métricas de\\Projeto}}
+ & 22 & Produtividade e Trabalho Realizado                                & \cite{Misra:2021}    & 1 \\
+ & 23 & Percentual de Progresso                                           & \cite{Misra:2021}    & 1 \\
+ & 24 & Percentual de Aumento no Progresso Dentro de uma Iteração (IPWI) & \cite{Misra:2021}    & 1 \\
+ & 25 & Percentual de Progresso Real numa Iteração (API)                  & \cite{Misra:2021}    & 1 \\
+ & 26 & Razão de Tamanho (S)                                              & \cite{Misra:2021}    & 1 \\
+ & 27 & Razão de Funcionalidade (F)                                       & \cite{Misra:2021}    & 1 \\
+ & 28 & Valor Empresarial Agregado (EBV)                                  & \cite{Misra:2021}    & 1 \\
+ & 29 & Progresso Relativo Após um Release (PR)                           & \cite{Misra:2021}    & 1 \\
+ & 30 & Taxa de Correção de Features (FCR)                                & \cite{Misra:2021}    & 1 \\
+ & 31 & Taxa de Correção de Features Após Release (FCRR)                  & \cite{Misra:2021}    & 1 \\
+ & 32 & Indicador Estratégico de Entrega Pontual de Funcionalidades       & \cite{Karhapaa:2024} & 1 \\
+ & 33 & Indicador de Desempenho do Processo                               & \cite{Karhapaa:2024} & 1 \\
+ & 34 & Indicador Estratégico de Prontidão do Produto                     & \cite{Karhapaa:2024} & 1 \\
+ & 35 & Taxa de Transferência de Correção de Bugs                         & \cite{Karhapaa:2024} & 1 \\
+
+\multirow{2}{2.6cm}{\parbox{3.2cm}{Métricas de\\Teste}}
+ & 36 & Detecção Média Percentual de Falhas (APFD)                        & \cite{Ilays:2024}    & 1 \\
+ & 37 & Taxa de Detecção de Falhas (FDR)                                  & \cite{Ilays:2024}    & 1 \\
+
+\multirow{2}{2.6cm}{\parbox{3.2cm}{Métricas de Efetividade de Equipes}}
+ & 38 & Percentual de Produtividade da Equipe Dentro de uma Iteração (PTI) & \cite{Misra:2021}   & 1 \\
+ & 39 & Percentual de Acurácia de Linhas de Código (\%A)                   & \cite{Misra:2021}   & 1 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{tables/references}
+\end{document}
